@@ -4211,6 +4211,8 @@ export class Quaternion {
      * @deprecated Use {@link Vector#applyQuaternion vector.applyQuaternion( quaternion )} instead.
      */
     multiplyVector3(v: any): any;
+    
+    rotateTowards(q: Quaternion, step: number): Quaternion;
 }
 
 export class Ray {
